@@ -1,0 +1,55 @@
+.image_ho{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.middle_ho{
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 15px;
+  background-color: #ec823b80;
+  overflow: hidden;
+  width: 87%;
+  height: 0;
+  transition: .5s ease;
+}
+.pic_h:hover .middle_ho {
+ bottom: 0;
+ height: 100%;
+}
+.pic_h img{
+  max-height: 140px;
+  object-fit: cover;
+}
+.text_ho{
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.advertisement .advertis h4{
+  clear: both;
+}
+.text_ho a{
+  background-color: #fff;  
+  padding: 10px 20px;
+  display: block;
+  font-size: 16px;
+  color: #000;
+}
+.text_ho a:hover{
+  background-color: #ec823b;
+  transition: .5s ease;
+  color: #fff;
+}
+@media(max-width: 767px) { 
+  .middle_ho{
+    width: 90%;
+  }
+}

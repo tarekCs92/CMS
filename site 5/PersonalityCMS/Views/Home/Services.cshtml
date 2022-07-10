@@ -1,0 +1,72 @@
+﻿@model List<EF.CountryTB>
+@{
+    ViewBag.Title = "Services";
+    Layout = "~/Views/Shared/_Master.cshtml";
+}
+<section class="contact-wthree jarallax" id="contact">
+    <div class="container">
+        <h3 class="text-center"><font color="#fea523">خدماتنا</font></h3>
+    </div>
+</section>
+<section class="service-w3l" id="service">
+    <div class="container">
+
+        <div class="col-lg-8 col-md-12 col-sm-12">
+            @foreach (var item in ViewBag.List2)
+            {
+                <div class="col-xs-4 serv-agile1" data-aos="flip-up" dir="rtl">
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                    <h4>@item.ArTitle</h4>
+                    <p class="serv-p2">@item.ArDescription</p>
+                </div>
+            }
+
+
+
+            <div class="clearfix"></div>
+
+            <div class="clearfix"></div>
+        </div>
+        <div class="col-lg-4 col-md-12 col-sm-12" data-aos="flip-up" dir="rtl">
+            <h3>خدماتنا</h3>
+            <p class="serv-p1">نسعى إلى تحقيق حلمكم ..</p>
+        </div>
+
+
+        <div class="clearfix"></div>
+        @foreach (var item in ViewBag.List1)
+            {
+            <p class="serv-p1" dir="rtl">&#10024; @item.ArDescription </p>
+        }
+    </div>
+</section>
+
+
+@foreach (var item in Model)
+{
+    <section class="staff-agileinfo" id="team">
+        <div class="container">
+            <h3 class="text-center"><font color="#fea523">الجامعات المتاحة ب @item.ArTitle</font></h3>
+           @if (item.UnivTBs != null)
+           {
+            foreach (var x in item.UnivTBs.ToList())
+            {
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6 team-agile3" data-aos="flip-up">
+                    <div class="view view-eighth">
+                        <img src="@x.Image" alt="" class="img-responsive" />
+                        <div class="mask">
+                            <h4>جامعة العقبة</h4>
+                            <p class="info"><a href="/sp.aspx?id=@x.Id">التخصصات المتاحة<a /></p>
+                        </div>
+
+                    </div>
+                </div>
+            }
+           }
+            <div class="clearfix"></div>
+        </div>
+    </section>
+}
+
+
+

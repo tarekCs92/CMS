@@ -1,0 +1,403 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Index.master.cs" Inherits="Personality.Index" %>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <!-- custom-theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Funding Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //custom-theme -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="stylesheet" href="css/mainStyles.css" />
+    <link rel='stylesheet' href='css/dscountdown.css' type='text/css' media='all' />
+
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" property="" />
+    <!-- gallery -->
+    <link href="css/lsb.css" rel="stylesheet" type="text/css">
+    <!-- //gallery -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,900" rel="stylesheet">
+    <link href="css/stylear.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- banner -->
+
+    <div class="header_mid">
+        <div class="w3layouts_header_mid">
+            <ul>
+
+                <li>
+                    <div class="header_contact_details_agile">
+                        <div class="w3l_header_contact_details_agile">
+                            <div class="w3_agile_search">
+                                <form action="#" method="post">
+                                    <input type="search" name="Search" placeholder="كلمات البحث..." required />
+                                    <input type="submit" value="بحث">
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="header_contact_details_agile">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        </i>
+						<div class="w3l_header_contact_details_agile">
+                            <div class="header-contact-detail-title">+49 (0) 211-3883-8868</div>
+                            <a class="w3l_header_contact_details_agile-info_inner">خدمة الدعم 24 ساعة </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="header_contact_details_agile">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <div class="w3l_header_contact_details_agile">
+                            <div class="header-contact-detail-title">+49 (0) 211-1793-640</div>
+                            <a class="w3l_header_contact_details_agile-info_inner">Dixion in Deutschland</a>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="header_contact_details_agile">
+                        <i class="" aria-hidden="true"></i>
+                        <div class="w3l_header_contact_details_agile">
+                            <img src="images/logo.png" />
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div class="banner">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header navbar-left">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+                <nav class="link-effect-2" id="link-effect-2">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="Index.aspx"><span data-hover="الرئيسية">الرئيسية</span></a></li>
+                        <li><a href="About.aspx"><span data-hover="نبذة عن الشركة">نبذة عن الشركة</span></a></li>
+                        <li><a href="Products.aspx"><span data-hover="المنتجات">المنتجات</span></a></li>
+                        <li class="dropdown">
+                            <a href="Services.aspx" class=""><span data-hover="دعم الخدمة">دعم الخدمة</span></a>
+                        </li>
+                        <li><a href="News.aspx"><span data-hover="أخبار">أخبار</span></a></li>
+                        <li><a href="Carrier.aspx"><span data-hover="مهنة">مهنة</span></a></li>
+                        <li><a href="Contact.aspx"><span data-hover="اتصال">اتصال</span></a></li>
+                        <li><a href="mail.html"><span data-hover="Dixion-الرعاية الصحية">Dixion-الرعاية الصحية
+                        </span></a></li>
+
+                        <li><a href="index.html"><span data-hover="English">English</span></a></li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- //banner -->
+    <!--  main -->
+
+    <%--    <form id="form1" runat="server">--%>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <%--</form>--%>
+    <!-- // main -->
+    <!-- footer -->
+    <div class="footer_agile_w3ls">
+        <div class="container">
+            <div class="agileits_w3layouts_footer_grids">
+                <div class="col-md-3 footer-w3-agileits">
+                    <h3>اوبر Dixion</h3>
+                    <ul>
+                        <li><a href="">الرئيسية</a></li>
+                        <li><a href="">نبذة عن الشركة</a></li>
+                        <li><a href="">المنتجات</a></li>
+                        <li><a href="">دعم الخدمة</a></li>
+                        <li><a href="">أخبار</a></li>
+                        <li><a href="">مهنة</a></li>
+                        <li><a href="">إدارة التحرير</a></li>
+                        <li><a href="">الشروط</a></li>
+                        <li><a href="">الرعاية الصحية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-agileits">
+                    <h3>حول منتجاتنا</h3>
+                    <ul>
+                        <li><a href="">جراحة وطب الطوارئ</a></li>
+                        <li><a href="">التشخيص</a></li>
+                        <li><a href="">طب النساء</a></li>
+                        <li><a href="">وحدة العناية المركزة</a></li>
+                        <li><a href="">أسرة المستشفيات</a></li>
+                        <li><a href="">حديثي الولادة</a></li>
+                        <li><a href="">الأثاث الطبي</a></li>
+                        <li><a href="">المستلزمات الطبية</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 footer-wthree">
+                    <h3>DIXION Tätigkeitsfelder</h3>
+                    <p>
+                        Dixion تفخر بأن تقدم شركائنا وعملائنا الدعم تنوعا في مختلف المجالات. معدات كاملة المرافق الطبية بجميع أنواعها، تصنيع المعدات الطبية تحت اسم العلامة التجارية الخاصة بها، وبناء المراكز الصحية وغيرها من المرافق البنية التحتية الطبية، البحث عن الموظفين والتوظيف والتدريب - كل ذلك يجعل خدماتنا في السوق الطبية فريدة من نوعها وقادرة على المنافسة.
+                    </p>
+                </div>
+
+                <div class="col-md-3 footer-agileits-w3layouts">
+                    <h3>DIXION Healthcare</h3>
+                    <p>
+                        ويوفر مشروع الرعاية الصحية Dixion التدريب وورش عمل مع المتخصصين الرائدة في مجال الرعاية الصحية لأصحاب المهن الطبية الدولية وينظم علاج المرضى الدوليين في المستشفيات المرموقة في أوروبا.
+                    </p>
+                </div>
+                <div class="clearfix"></div>
+
+            </div>
+            <div class="agileits_w3layouts_logo logo2">
+                <h2><a href="index.html">اتصل بنا</a></h2>
+                <div class="agileits-social">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="wthree_copy_right">
+        <div class="container">
+            <p>© 2017 . جميع الحقوق محفوظة<a href=""></a></p>
+        </div>
+    </div>
+    <!-- //footer -->
+
+    <div class="modal fade" id="myModal2" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    <div class="signin-form profile">
+                        <h3 class="agileinfo_sign">Sign In</h3>
+                        <div class="login-form">
+                            <form action="#" method="post">
+                                <input type="email" name="email" placeholder="E-mail" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <div class="tp">
+                                    <input type="submit" value="Sign In">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="login-social-grids">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                        <p><a href="#" data-toggle="modal" data-target="#myModal3">Don't have an account?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Modal1 -->
+    <!-- Modal2 -->
+    <div class="modal fade" id="myModal3" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                    <div class="signin-form profile">
+                        <h3 class="agileinfo_sign">Sign Up</h3>
+                        <div class="login-form">
+                            <form action="#" method="post">
+                                <input type="text" name="name" placeholder="Username" required>
+                                <input type="email" name="email" placeholder="Email" required>
+                                <input type="password" name="password" placeholder="Password" required>
+                                <input type="password" name="password" placeholder="Confirm Password" required>
+                                <input type="submit" value="Sign Up">
+                            </form>
+                        </div>
+                        <p><a href="#">By clicking register, I agree to your terms</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //Modal2 -->
+
+    <!-- //bootstrap-pop-up -->
+
+    <!-- js -->
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <!-- //js -->
+    <!-- Counter required files -->
+    <script type="text/javascript" src="js/dscountdown.min.js"></script>
+    <script src="js/demo-1.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $('.demo2').dsCountDown({
+                endDate: new Date("December 24, 2020 23:59:00"),
+                theme: 'black'
+            });
+        });
+    </script>
+    <!-- //Counter required files -->
+
+
+
+    <script src="js/mainScript.js"></script>
+    <script src="js/rgbSlide.min.js"></script>
+    <!-- carousal -->
+    <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function () {
+            $(".center").slick({
+                dots: true,
+                infinite: true,
+                centerMode: true,
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: true,
+                            centerMode: false,
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: true,
+                            centerMode: false,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <!-- //carousal -->
+    <!-- flexisel -->
+    <script type="text/javascript">
+        $(window).load(function () {
+            $("#flexiselDemo1").flexisel({
+                visibleItems: 4,
+                animationSpeed: 1000,
+                autoPlay: true,
+                autoPlaySpeed: 3000,
+                pauseOnHover: true,
+                enableResponsiveBreakpoints: true,
+                responsiveBreakpoints: {
+                    portrait: {
+                        changePoint: 480,
+                        visibleItems: 1
+                    },
+                    landscape: {
+                        changePoint: 640,
+                        visibleItems: 2
+                    },
+                    tablet: {
+                        changePoint: 768,
+                        visibleItems: 2
+                    }
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    <!-- //flexisel -->
+    <!-- gallery-pop-up -->
+    <script src="js/lsb.min.js"></script>
+    <script>
+        $(window).load(function () {
+            $.fn.lightspeedBox();
+        });
+    </script>
+    <!-- //gallery-pop-up -->
+    <!-- flexSlider -->
+    <script defer src="js/jquery.flexslider.js"></script>
+    <script type="text/javascript">
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+    <!-- //flexSlider -->
+
+    <!-- start-smooth-scrolling -->
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+            });
+        });
+    </script>
+    <!-- start-smooth-scrolling -->
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.js"></script>
+    <!-- //for bootstrap working -->
+    <!-- here stars scrolling icon -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!-- //here ends scrolling icon -->
+
+    <!--  MyScripts -->
+    <script src="/MyScripts.js"></script>
+    <!--  EndMyScripts -->
+
+</body>
+</html>

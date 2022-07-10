@@ -1,0 +1,43 @@
+﻿@model EF.SpecTB
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>SpecTB</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EnTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EnTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ArTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ArTitle)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UnivTB.EnTitle)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UnivTB.EnTitle)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

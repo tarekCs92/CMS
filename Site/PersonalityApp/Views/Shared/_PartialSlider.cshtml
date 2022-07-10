@@ -1,0 +1,53 @@
+﻿@using System.Web.UI.WebControls
+@using Microsoft.Ajax.Utilities
+@using PagedList.Mvc
+@using EF
+@model PagedList.IPagedList<IndexTB>
+<table class="table table-users table-hover">
+    <thead>
+        <tr>
+            <th>
+                الكود
+            </th>
+            <th>
+                العنوان
+            </th>
+            <th>
+                Title
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @item.Id
+                </td>
+                <td>
+                    @item.ArTitle
+                </td>
+                <td>
+                    @item.EnTitle
+                </td>
+                <td>
+                    <a href="/@HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString()/Edit?id=@item.Id"><i class="fa  fa-edit"></i>  تعديل</a> &nbsp;&nbsp;
+                    @if (item.SectionId == 1)
+                    {
+                        <a href="#" class="Delete-Item" data-id="@item.Id"><i class="fa  fa-trash"></i> حذف </a>
+                    }
+                    else
+                    {
+                        <text><i class="fa  fa-trash"></i> حذف </text>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<div class="">
+    <div class="pull-right">@Html.PagedListPager(Model, page => Url.Action("Index", new { page }))</div>
+    <input type="hidden" id="pageindex" value="@Request.RawUrl" />
+    <input type="hidden" id="pagenum" value="" />
+</div>
